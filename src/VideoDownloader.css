@@ -1,0 +1,126 @@
+/* VideoDownloader.css */
+body {
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.downloader-wrapper {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-bar input {
+  padding: 15px;
+  font-size: 16px;
+  width: 70%;
+  max-width: 400px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+}
+
+.search-bar button {
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.video-details {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.video-thumb {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.video-details h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.type-tabs {
+  margin-bottom: 20px;
+}
+
+.type-tabs button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 2px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.type-tabs button.active,
+.type-tabs button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+select {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.download-btn {
+  margin-top: 15px;
+  padding: 14px 30px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #1e7e34;
+}
