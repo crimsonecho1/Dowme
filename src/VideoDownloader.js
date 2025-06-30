@@ -20,7 +20,7 @@ export default function VideoDownloader() {
         if (!url) return;
         setLoading(true);
         try {
-            const response = await fetch('https://0e41-156-217-230-138.ngrok-free.app/info', {
+            const response = await fetch('https://server-production-5141c.up.railway.app/info', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ url })
@@ -43,7 +43,7 @@ export default function VideoDownloader() {
 
     const handleDownload = () => {
         if (!selectedFormat || !info?.bestAudioFormatId) return;
-        const link = `https://0e41-156-217-230-138.ngrok-free.app/download?url=${encodeURIComponent(url)}&format_id=${selectedFormat}&audio_id=${info.bestAudioFormatId}`;
+        const link = `https://server-production-5141c.up.railway.app/download?url=${encodeURIComponent(url)}&format_id=${selectedFormat}&audio_id=${info.bestAudioFormatId}`;
         window.open(link, '_blank');
     };
 
