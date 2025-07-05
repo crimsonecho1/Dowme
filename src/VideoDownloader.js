@@ -1,6 +1,7 @@
 // src/VideoDownloader.jsx
 import React, { useState } from 'react';
 import './VideoDownloader.css';
+import AdBanner from './AdBanner';
 
 function formatSize(bytes) {
     if (!bytes) return 'Unknown size';
@@ -104,6 +105,15 @@ export default function VideoDownloader() {
                         Download
                     </button>
                 </div>
+            )}
+            {/* يمكن تكرار الإعلان في الأسفل أيضًا */}
+            {info && (
+                <>
+                <AdBanner />
+                <div className="video-details">
+                    {/* باقي التفاصيل */}
+                </div>
+                </>
             )}
         </div>
     );
