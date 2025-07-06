@@ -1,0 +1,73 @@
+/* src/components/ContactForm.css */
+.contact-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #1e1e2f;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #00d2ff;
+    font-size: 1.8rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #2e2e3f;
+    color: #fff;
+    resize: none;
+    /* ❌ منع التكبير والتصغير */
+    transition: outline 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #00d2ff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #00d2ff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #1e1e2f;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 20px;
+}
+
+.contact-form button:hover {
+    background: #00b4cc;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+    .contact-form-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-form-container h2 {
+        font-size: 1.5rem;
+    }
+}

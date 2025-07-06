@@ -1,0 +1,36 @@
+/* src/components/Footer.css */
+.site-footer {
+    background-color: #1e1e2f;
+    color: #ffffffcc;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-top: 1px solid #333;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00d2ff;
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #00d2ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00b4cc; 
+}

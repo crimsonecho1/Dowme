@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import VideoDownloader from './VideoDownloader';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home/Home';
+import HowToUse from './HowToUse/HowToUse';
+import About from './About/About';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <VideoDownloader />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/how-to-use" element={<HowToUse />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

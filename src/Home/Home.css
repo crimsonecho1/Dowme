@@ -1,0 +1,114 @@
+body {
+    background-color: #0e0e16;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffffde;
+}
+
+.downloader-wrapper,
+.contact-form-container {
+    background-color: #1e1e2f;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.07);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.downloader-wrapper:hover,
+.contact-form-container:hover {
+    box-shadow: 0 0 40px rgba(0, 210, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #2e2e3f;
+    color: #fff;
+}
+
+.search-bar button {
+    padding: 0.75rem 1.5rem;
+    background-color: #00d2ff;
+    border: none;
+    border-radius: 8px;
+    color: #1e1e2f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.video-details {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.video-thumb {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.type-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.type-tabs button {
+    padding: 0.5rem 1rem;
+    background-color: #2e2e3f;
+    color: #fff;
+    border: 1px solid #00d2ff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.type-tabs .active {
+    background-color: #00d2ff;
+    color: #1e1e2f;
+    font-weight: bold;
+}
+
+select {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #2e2e3f;
+    color: #fff;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.download-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #00d2ff;
+    border: none;
+    border-radius: 8px;
+    color: #1e1e2f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #00b4cc;
+}
+
+.contact-form input[type="email"] {
+    resize: none !important;
+    /* يلغي تكبير الحقل */
+}
